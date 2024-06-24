@@ -1,7 +1,4 @@
 export type SSE = {
-    /** Constructor. */
-    new (url: string, options?: SSEOptions): SSE;
-
     /**
      * - headers
      */
@@ -68,6 +65,10 @@ export type SSEOptions = {
      * - flag, if streaming should start automatically
      */
     start?: boolean;
+    /**
+     * - flag, if data should be trimmed
+     */
+    trimData?: boolean;
     /**
      * - debugging flag
      */
